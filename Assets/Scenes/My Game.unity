@@ -264,6 +264,8 @@ GameObject:
   - component: {fileID: 235585427}
   - component: {fileID: 235585426}
   - component: {fileID: 235585425}
+  - component: {fileID: 235585429}
+  - component: {fileID: 235585430}
   m_Layer: 0
   m_Name: Animal 2
   m_TagString: Untagged
@@ -349,6 +351,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &235585429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235585424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326391300d6b471d8a320875ee62b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  xContraint: 14.3
+  zContraint: 5.5
+--- !u!54 &235585430
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235585424}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +572,8 @@ GameObject:
   - component: {fileID: 1129522311}
   - component: {fileID: 1129522310}
   - component: {fileID: 1129522309}
+  - component: {fileID: 1129522313}
+  - component: {fileID: 1129522314}
   m_Layer: 0
   m_Name: Animal 1
   m_TagString: Untagged
@@ -624,6 +659,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129522313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129522308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326391300d6b471d8a320875ee62b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  xContraint: 14.3
+  zContraint: 5.5
+--- !u!54 &1129522314
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129522308}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &1434790921
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +702,7 @@ GameObject:
   - component: {fileID: 1434790924}
   - component: {fileID: 1434790923}
   - component: {fileID: 1434790922}
+  - component: {fileID: 1434790926}
   m_Layer: 0
   m_Name: Power Up
   m_TagString: Untagged
@@ -721,6 +788,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 45}
+--- !u!114 &1434790926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434790921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5176caaeebe346b0bbe8a4f550b5b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 70
 --- !u!1 &1709503602
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +813,8 @@ GameObject:
   - component: {fileID: 1709503605}
   - component: {fileID: 1709503604}
   - component: {fileID: 1709503603}
+  - component: {fileID: 1709503607}
+  - component: {fileID: 1709503608}
   m_Layer: 0
   m_Name: Animal 4
   m_TagString: Untagged
@@ -818,6 +900,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709503607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709503602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326391300d6b471d8a320875ee62b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  xContraint: 14.3
+  zContraint: 5.5
+--- !u!54 &1709503608
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709503602}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &1789612341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,6 +1138,8 @@ GameObject:
   - component: {fileID: 1922248882}
   - component: {fileID: 1922248881}
   - component: {fileID: 1922248880}
+  - component: {fileID: 1922248884}
+  - component: {fileID: 1922248885}
   m_Layer: 0
   m_Name: Animal 3
   m_TagString: Untagged
@@ -1110,6 +1225,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1922248884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922248879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326391300d6b471d8a320875ee62b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  xContraint: 14.3
+  zContraint: 5.5
+--- !u!54 &1922248885
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922248879}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!1 &2141607515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,6 +1268,8 @@ GameObject:
   - component: {fileID: 2141607518}
   - component: {fileID: 2141607517}
   - component: {fileID: 2141607516}
+  - component: {fileID: 2141607520}
+  - component: {fileID: 2141607521}
   m_Layer: 0
   m_Name: Boss Animal
   m_TagString: Untagged
@@ -1208,3 +1356,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2141607520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141607515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326391300d6b471d8a320875ee62b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  xContraint: 14.3
+  zContraint: 5.5
+--- !u!54 &2141607521
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141607515}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
