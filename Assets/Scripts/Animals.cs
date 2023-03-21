@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Animals : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5;
     private Rigidbody enemyRb;
     private GameObject player;
     public float xContraint = 14.3f;
@@ -21,7 +21,7 @@ public class Animals : MonoBehaviour
     void Update()
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
-        enemyRb.AddForce(-lookDirection * speed);
+        transform.Translate(-lookDirection * speed * Time.deltaTime);
         ConstrainPlayerPosition();
     }
     void ConstrainPlayerPosition()

@@ -7,11 +7,13 @@ public class PlayerController : MonoBehaviour
     private float speed = 5;
     public float xContraint = 14.3f;
     public float zContraint = 5.5f;
+    public bool hasPowerup;
+    public GameObject powerupIndicator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        hasPowerup = false;
     }
 
     // Update is called once per frame
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         MovePlayer();
         ConstrainPlayerPosition();
+        Powerup();
     }
 
     // Moves the player based on key input
@@ -53,5 +56,40 @@ public class PlayerController : MonoBehaviour
        if (transform.position.z < -zContraint) {
         transform.position = new Vector3(transform.position.x, transform.position.y, -zContraint);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Powerup"))
+        {
+            hasPowerup = true;
+            Destroy(other.gameObject);
+            StartCoroutine(PowerupCountdownRoutine());
+            powerupIndicator.gameObject.SetActive(true);
+        }
+    }
+    IEnumerator PowerupCountdownRoutine()
+    {
+        yield return new WaitForSeconds(3);
+        hasPowerup = false;
+        powerupIndicator.gameObject.SetActive(false);
+    }
+    void Powerup()
+    {
+        if (hasPowerup)
+        {
+            speed = 7;
+        }
+        else
+        {
+            speed = 5;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Animal"))
+        {
+            Destroy(collision.gameObject);
+        }
+        
     }
 }
