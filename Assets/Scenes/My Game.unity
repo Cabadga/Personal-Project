@@ -264,6 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 300493472}
   - component: {fileID: 300493473}
+  - component: {fileID: 300493474}
   m_Layer: 0
   m_Name: Spawn Manager
   m_TagString: Untagged
@@ -298,7 +299,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5d327fe9c164078b26058c49c3c420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalPrefab: {fileID: 8277391675186069493, guid: 994271bd98406429cb9bd742c3e5f9ae, type: 3}
+  animalPrefabs: []
+--- !u!114 &300493474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300493471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5d327fe9c164078b26058c49c3c420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 8277391675186069493, guid: 994271bd98406429cb9bd742c3e5f9ae, type: 3}
+  - {fileID: 1217876616592039142, guid: 3637e709a51764c69b4f5aee8d492a41, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
