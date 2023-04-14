@@ -27,16 +27,16 @@ public class Animals : MonoBehaviour
     void ConstrainPlayerPosition()
     {
        if (transform.position.x > xContraint) {
-        transform.position = new Vector3(xContraint, transform.position.y, transform.position.z);
-        }
-       if (transform.position.x < -xContraint) {
         transform.position = new Vector3(-xContraint, transform.position.y, transform.position.z);
         }
+       if (transform.position.x < -xContraint) {
+        transform.position = new Vector3(xContraint, transform.position.y, transform.position.z);
+        }
        if (transform.position.z > zContraint) {
-        transform.position = new Vector3(transform.position.x, transform.position.y, zContraint);
+        transform.position = new Vector3(transform.position.x, transform.position.y, -zContraint);
         }
        if (transform.position.z < -zContraint) {
-        transform.position = new Vector3(transform.position.x, transform.position.y, -zContraint);
+        transform.position = new Vector3(transform.position.x, transform.position.y, zContraint);
         }
     }
 }
